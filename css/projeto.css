@@ -34,6 +34,7 @@ footer{
 .item2{
     text-align: justify;
     margin-right: 40px; 
+    margin-top: 35px;
 }
 .item3{
     display: flex;
@@ -53,13 +54,29 @@ footer{
 span{
     color: green;
 }
+@media (max-width: 715px){
+    .redesocial{
+        width: 35px;
+        height: 35px;
+    }
+}
 @media (max-width: 480px){
     .redesocial{
         width: 35px;
         height: 35px;
     }
     .item{
-        display: block;
+        display: sticky;
+        text-align: center;
+        gap: 50px;
+        font-size: 10px;
+        margin-top: 0px;
+    }
+    .item3{
+        font-size: 8px;
+    }
+    .item4{
+        font-size: 8px
     }
 }
 
@@ -177,7 +194,6 @@ span{
         display: none;
     }
 }
-
 /*parte do slider*/
 #slide{
     width: 100%;
@@ -232,6 +248,9 @@ span{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
 }
 .flip-box {
     background-color: transparent;
@@ -262,11 +281,11 @@ span{
     backface-visibility: hidden;
 }
 .flip-box-front {
-    background-color: chocolate;
+    background-color: green;
     color: black;
 }
 .flip-box-back {
-    background-color: chocolate;
+    background-color: green;
     color: white;
     transform: rotateY(180deg);
 }

@@ -6,7 +6,33 @@ body{
 ul{
     list-style-type: none;
 }
-
+.animais{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px;;
+    padding-bottom: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.animais p{
+    padding: 100px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.animais img{
+    border-radius: 20%;
+    width: 250px;
+    height: 200px;
+}
+.flex{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+@media (max-width: 555px){
+    .flex{
+        display: block;
+    }
+}
 /*footer*/
 footer{
     background-color: black;
@@ -52,10 +78,29 @@ footer{
 span{
     color: green;
 }
-@media (max-width: 681px){
+@media (max-width: 715px){
     .redesocial{
         width: 35px;
         height: 35px;
+    }
+}
+@media (max-width: 480px){
+    .redesocial{
+        width: 35px;
+        height: 35px;
+    }
+    .item{
+        display: sticky;
+        text-align: center;
+        gap: 50px;
+        font-size: 10px;
+        margin-top: 0px;
+    }
+    .item3{
+        font-size: 8px;
+    }
+    .item4{
+        font-size: 8px
     }
 }
 
