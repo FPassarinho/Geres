@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bem-vindo ao Gerês</title>
-        <link rel="stylesheet" type="text/css" href="css/pontos.css">
+        <link rel="stylesheet" type="text/css" href="css/forms.css">
     </head>
     <body>
         <header class="header">
@@ -20,26 +20,49 @@
                 </ul>
             </nav>
         </header>
-        <div class="pontos">
-            <h1>Paisagens</h1>
-            <p>Gerês é caracterizado por ter lindas paisagens, ótimo para quem gosta de andar com máquina fotográfica na mão, aqui deixa-mos 4 boas opções para visitar no Gerês.</p>
-            <h3>Miradouro da Pedra Bela</h3>
-            <p>Está localizado em Terras de Bouro, a mais de 800 metros de altitude. A partir do Miradouro é possível avistar a Albufeira da Caniçada, os vilarejos e os rios contornando a serra.É acessível de carro.
-            </p>
-            <img src="Imagens/miradouro.jpg" alt="Foto do Miradouro da Pedra Bela">
-
-            <h3>Cascata do Arado</h3>
-            <p>O melhor horário para visitá-la, é entre as 12h e as 14h. É possível chegar através de uma estrada de terra batida, que se inicia a 2km da Aldeia da Ermida.</p>
-            <img src="Imagens/cascataarado.jpg" alt="Foto da Cascatada do Arado">
-
-            <h3>Cascata Tahiti</h3>
-            <p>Uma ótima opção para ser visitada no verão pois esta cascata forma várias piscinas naturais ajudando a refrescar no verão. É possivel chegar até ao início da cascata de carro.</p>
-            <img src="Imagens/cascatatahiti.jpg" alt="Foto da Cascata Tahiti">
-
-            <h3>Ponte da Misarela</h3>
-            <p>Localiza-se sobre o rio Rabagão, na freguesia de Ferral, concelho de Montalegre. É conhecida popularmente como a Ponte do Diabo onde em lenda dizem que foi construída pelo próprio Diabo. O que é certo, é que foi palco de lutas e combates entre os Portugueses e as tropas Francesas de Soult.</p>
-            <img src="Imagens/pontemisarela.jpg" alt="Foto da ponte  da misarela">
-        </div>
+        <section>
+            <forms action="#" method="post">
+                <div>
+                    <h1>Formulário de Apadrinnhamento</h1>
+                </div>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input id="nome" name="nome" type="text">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input id="email" name="email" type="email">
+                </div>
+                <div>
+                    <label for="numero">Número Cotribuinte:</label>
+                    <input id="numero" name="numero" type="number">
+                </div>
+                <div>
+                    <label for="data">Data de Nascimento:</label>
+                    <input id="data" name="data" type="date">
+                </div>
+                <div>
+                    <label for="morada">Morada:</label>
+                    <input id="morada" name="morada" type="text">
+                </div>
+                <div>
+                    <label for="codigopostal">Código Postal:</label>
+                    <input id="codigopostal" name="codigopostal" type="number">			
+                </div>
+                <div>
+                    <label for="localidade">Localidade:</label>
+                    <input id="localidade" name="localidade" type="text">
+                </div>
+                <div>
+                    <label for="pais">País:</label>
+                    <input id="pais" name="pais" type="text">
+                </div>
+                <div class="input">
+                    <input type="submit" value="Enviar">
+                </div>
+                <p>*O IBAN para pagamento e todas informações serão enviadas para este email</p>
+            </forms>
+        </section>
         <footer class="redes">
             <div class="item">
                 <div class="item1">

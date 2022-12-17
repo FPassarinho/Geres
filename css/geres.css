@@ -21,6 +21,11 @@ ul{
 .geres2{
     text-align: justify;
 }
+@media (max-width: 530px){
+	.geres2{
+		text-align: center;
+	}
+}
 /*footer*/
 footer{
     background-color: black;
