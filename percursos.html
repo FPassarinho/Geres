@@ -17,6 +17,7 @@
                     <li><a href="pontos.html">Paisagens</a></li>
                     <li><a href="animais.html">Os Animais do Gerês</a></li>
                     <li><a href="percursos.html">Percursos sugeridos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
                 </ul>
             </nav>
         </header>
@@ -28,23 +29,28 @@
             <p>Distância: 17km
                 Local de Partida/Chegada: Castro Laboreiro
             </p>
-            <img src="Imagens/caminho1.jpg" alt="Imagem do Percurso">
-            <img src="Imagens/ponte1.jpg" alt="Imagem de uma ponte do caminho">
+            <img class="foto" src="Imagens/caminho1.jpg" alt="Imagem do Percurso" onclick="ampliar(this)">
+            <img class="foto" src="Imagens/ponte1.jpg" alt="Imagem de uma ponte do caminho" onclick="ampliar(this)">
 
             <h3>Trilho da Cascata de Pontes e Poço do Contador</h3>
             <p>Distância: 3km
                 Local de Partida/Chegada: Aldeia  de Pontes
             </p>
-            <img src="Imagens/caminho2.jpg" alt="Imagem do Percurso">
-            <img src="Imagens/cascata2.jpg" alt="Imagem de uma ponte do caminho">
+            <img class="foto" src="Imagens/caminho2.jpg" alt="Imagem do Percurso" onclick="ampliar(this)">
+            <img class="foto" src="Imagens/cascata2.jpg" alt="Imagem de uma ponte do caminho" onclick="ampliar(this)">
 
             <h3>Trilho Pé de Cabril</h3>
             <p>Distância: 9km
                 Local de Partida/Chegada: Portela de Leonte/Aldeia do Gerês
             </p>
-            <img src="Imagens/caminho3.jpg" alt="Imagem do Percurso">
-            <img src="Imagens/montanha3.jpg" alt="Imagem de uma Montanha">
+            <img class="foto" src="Imagens/caminho3.jpg" alt="Imagem do Percurso" onclick="ampliar(this)">
+            <img class="foto" src="Imagens/montanha3.jpg" alt="Imagem de uma Montanha" onclick="ampliar(this)">
         </div>
+		<div class="modal" id="myModal">
+			<div><span id="sair" onclick="sair()">&times  </span><img class="modal-content" id="img"/>
+				<div id="caption"></div>
+			</div>
+		</div>
         <footer class="redes">
             <div class="item">
                 <div class="item1">
@@ -68,5 +74,7 @@
             </div>
             <p class="item4">© 2022, Gerês, Filipe Passarinho e Hugo Dimas</p>
         </footer>
+		<script src="javascript/pontos.js">
+		</script>
     </body>
 </html>

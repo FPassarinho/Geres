@@ -17,6 +17,7 @@
                     <li><a href="pontos.html">Paisagens</a></li>
                     <li><a href="animais.html">Os Animais do Gerês</a></li>
                     <li><a href="percursos.html">Percursos sugeridos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
                 </ul>
             </nav>
         </header>
@@ -26,38 +27,43 @@
             <div class="flex">
                 <div>
                     <h3>Lobo-Ibérico</h3>
-                    <img class="foto" src="Imagens/lobogeres.jpg" alt="Foto do Lobo do Gerês">
+                    <img class="foto" src="Imagens/lobogeres.jpg" alt="Foto do Lobo do Gerês" onclick="ampliar(this)">
                 </div>
                 <div>
                     <h3>Gato-bravo</h3>
-                    <img class="foto" src="Imagens/gatobravo.jpg" alt="Foto do Gato bravo"> 
+                    <img class="foto" src="Imagens/gatobravo.jpg" alt="Foto do Gato bravo" onclick="ampliar(this)"> 
                 </div>
                 <div>
                     <h3>Corço</h3>
-                    <img class="foto" src="Imagens/corço.jpg" alt="Foto do corço">
+                    <img class="foto" src="Imagens/corço.jpg" alt="Foto do corço" onclick="ampliar(this)">
                 </div>
                 <div>
                     <h3>Truta-do-rio</h3>
-                    <img class="foto" src="Imagens/truta.jpg" alt="Foto de uma truta">
+                    <img class="foto" src="Imagens/truta.jpg" alt="Foto de uma truta" onclick="ampliar(this)">
                 </div>
                 <div>
                     <h3>Lontra</h3>
-                    <img class="foto" src="Imagens/lontra.jpg" alt="Foto de uma Lontra">
+                    <img class="foto" src="Imagens/lontra.jpg" alt="Foto de uma Lontra" onclick="ampliar(this)">
                 </div>
                 <div>   
                     <h3>Lagarto-de-água</h3>
-                    <img class="foto" src="Imagens/lagarto.jpg" alt="Foto do Lagarto de água">
+                    <img class="foto" src="Imagens/lagarto.jpg" alt="Foto do Lagarto de água" onclick="ampliar(this)">
                 </div>
                 <div>   
                     <h3>Rã-Ibérica</h3>
-                    <img class="foto" src="Imagens/ra.jpg" alt="Foto da Rã-Ibérica">
+                    <img class="foto" src="Imagens/ra.jpg" alt="Foto da Rã-Ibérica" onclick="ampliar(this)">
                 </div>
                 <div>   
                     <h3>Toupeira-de-água</h3>
-                    <img class="foto" src="Imagens/toupeira.jpg" alt="Foto da Toupeira de água">
+                    <img class="foto" src="Imagens/toupeira.jpg" alt="Foto da Toupeira de água" onclick="ampliar(this)">
                 </div>
             </div>
         </div>
+		<div class="modal" id="myModal">
+			<div><span id="sair" onclick="sair()">&times  </span><img class="modal-content" id="img"/>
+				<div id="caption"></div>
+			</div>
+		</div>
         <footer class="redes">
             <div class="item">
                 <div class="item1">
@@ -81,5 +87,7 @@
             </div>
             <p class="item4">© 2022, Gerês, Filipe Passarinho e Hugo Dimas</p>
         </footer>
+		<script src="javascript/pontos.js">
+		</script>
     </body>
 </html>
